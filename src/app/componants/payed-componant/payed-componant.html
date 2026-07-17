@@ -1,0 +1,9 @@
+<div class="container py-5 text-center">
+  <h1 class="text-success mb-3">{{ 'PAYED.TITLE' | translate }}</h1>
+  <p *ngIf="total">
+    {{ 'PAYED.PAID_PREFIX' | translate }} <strong>${{ total }}</strong> {{
+    'PAYED.PAID_SUFFIX' | translate }}
+  </p>
+  <p>{{ 'PAYED.THANK_YOU' | translate }}</p>
+  <p>{{ 'PAYED.REDIRECTING' | translate }}</p>
+</div>

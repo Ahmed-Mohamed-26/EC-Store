@@ -1,0 +1,93 @@
+<div class="container my-5">
+  <div class="card shadow-lg p-4 border-0 rounded-4">
+    <h3 class="text-center mb-4 fw-bold text-primary">
+      {{ 'ADD_PRODUCT.TITLE' | translate }}
+    </h3>
+
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="row g-3">
+        <!-- Product Title -->
+        <div class="col-md-6">
+          <label for="ProductName" class="form-label fw-semibold"
+            >{{ 'ADD_PRODUCT.PRODUCT_TITLE_LABEL' | translate }}</label
+          >
+          <input
+            type="text"
+            id="ProductName"
+            formControlName="title"
+            class="form-control"
+            placeholder="{{ 'ADD_PRODUCT.PRODUCT_TITLE_PLACEHOLDER' | translate }}"
+          />
+        </div>
+
+        <!-- Product Price -->
+        <div class="col-md-6">
+          <label for="Productprice" class="form-label fw-semibold"
+            >{{ 'ADD_PRODUCT.PRODUCT_PRICE_LABEL' | translate }}</label
+          >
+          <input
+            type="number"
+            id="Productprice"
+            formControlName="price"
+            class="form-control"
+            placeholder="{{ 'ADD_PRODUCT.PRODUCT_PRICE_PLACEHOLDER' | translate }}"
+          />
+        </div>
+
+        <!-- Category Dropdown -->
+        <div class="col-md-6">
+          <label class="form-label fw-semibold"
+            >{{ 'ADD_PRODUCT.CATEGORY_LABEL' | translate }}</label
+          >
+          <select class="form-select" formControlName="category">
+            <option value="">
+              {{ 'ADD_PRODUCT.SELECT_CATEGORY' | translate }}
+            </option>
+            @for (cat of categories; track $index) {
+            <option [value]="cat.slug">{{ cat.name }}</option>
+            }
+          </select>
+        </div>
+
+        <!-- Product Image URL -->
+        <div class="col-md-6">
+          <label for="ProductImage" class="form-label fw-semibold"
+            >{{ 'ADD_PRODUCT.PRODUCT_IMAGE_LABEL' | translate }}</label
+          >
+          <input
+            type="text"
+            id="ProductImage"
+            formControlName="imageUrl"
+            class="form-control"
+            placeholder="{{ 'ADD_PRODUCT.PRODUCT_IMAGE_PLACEHOLDER' | translate }}"
+          />
+        </div>
+
+        <!-- Product Description -->
+        <div class="col-12">
+          <label for="ProductDesc" class="form-label fw-semibold"
+            >{{ 'ADD_PRODUCT.PRODUCT_DESC_LABEL' | translate }}</label
+          >
+          <textarea
+            id="ProductDesc"
+            formControlName="description"
+            class="form-control"
+            rows="3"
+            placeholder="{{ 'ADD_PRODUCT.PRODUCT_DESC_PLACEHOLDER' | translate }}"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+          <button
+            class="btn bg-primary px-5 py-2 text-white fw-semibold"
+            id="mainbtn"
+          >
+            {{ isEditMode ? ('ADD_PRODUCT.SUBMIT_EDIT' | translate) :
+            ('ADD_PRODUCT.SUBMIT_ADD' | translate) }}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.wishlist-detail-button {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #d9e1dd;
+  border-radius: 14px;
+  color: #17342c;
+  background: #fff;
+  font-size: 1.25rem;
+}
+
+.wishlist-detail-button:hover,
+.wishlist-detail-button.active {
+  color: #c34f53;
+  border-color: #e7bfc1;
+  background: #fff4f4;
+}

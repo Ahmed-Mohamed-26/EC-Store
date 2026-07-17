@@ -1,0 +1,169 @@
+<div class="container py-5">
+  <!-- Section wrapper -->
+  <div class="d-flex justify-content-center">
+    <div class="w-100" style="max-width: 1100px">
+      <!-- Header -->
+      <div class="text-center">
+        <h1 class="display-5 fw-bold">{{ 'ABOUT.TITLE' | translate }}</h1>
+        <p class="mt-4 lead text-secondary mx-auto" style="max-width: 720px">
+          {{ 'ABOUT.PARAGRAPH' | translate }}
+        </p>
+      </div>
+
+      <!-- Large hero image -->
+      <div
+        class="hero-section d-flex align-items-center justify-content-start rounded-3"
+      >
+        <div class="text-start p-5" style="max-width: 600px"></div>
+      </div>
+
+      <!-- Mission & Values grid -->
+      <div class="row mt-5 gy-4">
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold">{{ 'ABOUT.MISSION_TITLE' | translate }}</h2>
+          <p class="text-secondary">{{ 'ABOUT.MISSION_BODY' | translate }}</p>
+
+          <div class="mt-3 overflow-hidden rounded-3">
+            <div
+              class="bg-cover mission-image rounded-3"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHNfRiS70odj3OxXWrQ4uvqScqGiYavt7IcE50KepP5acrQ5SQ3Yictib-FUgQijHzMpuihdy6Q313lUEguQljO_ADU4Asc96xiUhDtMGU6p-AgSfwXslXH9ClyjmkhoiIOvQ9TlL-JQR-75YOx7yb9IyikhsRzXFPo0gPIcp4Fx5ZsJKkZr-0WJ96PhZvLY8Fg0xbG7qjHyVDu6JvD09wzmS0TO75AmaubOkE3v8Zv0jxfmjij5wMEkCYXmZFP34RxfU0QhL9edgt');
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold">{{ 'ABOUT.VALUES_TITLE' | translate }}</h2>
+
+          <div class="mt-3">
+            <!-- Value 1 -->
+            <div class="d-flex align-items-start mb-3">
+              <div class="me-3">
+                <div class="icon-circle">
+                  <span class="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+              <div>
+                <h5 class="mb-1">
+                  {{ 'ABOUT.VALUE_QUALITY_TITLE' | translate }}
+                </h5>
+                <p class="mb-0 text-secondary">
+                  {{ 'ABOUT.VALUE_QUALITY_BODY' | translate }}
+                </p>
+              </div>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="d-flex align-items-start mb-3">
+              <div class="me-3">
+                <div class="icon-circle">
+                  <span class="material-symbols-outlined">eco</span>
+                </div>
+              </div>
+              <div>
+                <h5 class="mb-1">
+                  {{ 'ABOUT.VALUE_SUSTAINABILITY_TITLE' | translate }}
+                </h5>
+                <p class="mb-0 text-secondary">
+                  {{ 'ABOUT.VALUE_SUSTAINABILITY_BODY' | translate }}
+                </p>
+              </div>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="d-flex align-items-start">
+              <div class="me-3">
+                <div class="icon-circle">
+                  <span class="material-symbols-outlined">groups</span>
+                </div>
+              </div>
+              <div>
+                <h5 class="mb-1">
+                  {{ 'ABOUT.VALUE_COMMUNITY_TITLE' | translate }}
+                </h5>
+                <p class="mb-0 text-secondary">
+                  {{ 'ABOUT.VALUE_COMMUNITY_BODY' | translate }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet the Team -->
+      <div class="mt-5 text-center">
+        <h2 class="h3 fw-bold">{{ 'ABOUT.MEET_TEAM_TITLE' | translate }}</h2>
+        <p class="text-secondary">{{ 'ABOUT.MEET_TEAM_DESC' | translate }}</p>
+      </div>
+
+      <div class="row mt-4 g-4">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <div
+            class="mx-auto avatar-lg"
+            style="
+              background-image: url('OliviaHayes.webp');
+            "
+          ></div>
+          <h5 class="mt-3 mb-0">Sophia Carter</h5>
+          <p class="text-muted mb-0">CEO &amp; Founder</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 text-center">
+          <div
+            class="mx-auto avatar-lg"
+            style="
+              background-image: url('EthanBennett.webp');
+            "
+          ></div>
+          <h5 class="mt-3 mb-0">Ethan Bennett</h5>
+          <p class="text-muted mb-0">Head of Design</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 text-center">
+          <div
+            class="mx-auto avatar-lg"
+            style="
+              background-image: url('SophiaCarter.webp');
+            "
+          ></div>
+          <h5 class="mt-3 mb-0">Olivia Hayes</h5>
+          <p class="text-muted mb-0">Marketing Director</p>
+        </div>
+      </div>
+
+      <!-- Contact / Subscribe -->
+      <div
+        class="mt-5 text-center"
+        style="max-width: 720px; margin-left: auto; margin-right: auto"
+      >
+        <h2 class="h3 fw-bold">{{ 'ABOUT.CONTACT_TITLE' | translate }}</h2>
+        <p class="text-secondary">
+          {{ 'ABOUT.CONTACT_PART1' | translate }}
+          <a
+            href="mailto:support@stylehub.com"
+            class="fw-semibold text-decoration-none"
+            style="color: var(--primary-color)"
+            >support@stylehub.com</a
+          >
+          {{ 'ABOUT.CONTACT_PART2' | translate }}
+          <span class="fw-semibold">(555) 123-4567</span>.
+        </p>
+
+        <div
+          class="mt-3 d-flex flex-column flex-sm-row justify-content-center gap-2"
+        >
+          <input
+            type="email"
+            class="form-control me-sm-2"
+            placeholder="{{ 'ABOUT.SUBSCRIBE_PLACEHOLDER' | translate }}"
+            style="max-width: 320px"
+          />
+          <button class="btn btn-primary-custom">
+            {{ 'ABOUT.SUBSCRIBE_BUTTON' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

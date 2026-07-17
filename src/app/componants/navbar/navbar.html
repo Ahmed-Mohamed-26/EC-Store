@@ -1,0 +1,94 @@
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-xl">
+   
+     <a class="navbar-brand fw-bold" routerLink="/Home">
+       <span class="brand-mark"><i class="bi bi-bag-heart"></i></span>
+       <span>{{ 'NAV.Store' | translate }}</span>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" #navbarCollapse id="navbarSupportedContent">
+
+ 
+
+   @if ((auth.authInitialized$ | async) === true) {
+       @if (user$ | async; as currentUser) {
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" routerLink="Home" routerLinkActive="active-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">{{ 'NAV.Home' | translate }}</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/About" routerLinkActive="active-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">{{ 'NAV.About' | translate }}</a></li>
+    <li class="nav-item">
+      <a class="nav-link nav-icon-link" routerLink="/Wishlist" routerLinkActive="active-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <i class="bi bi-heart"></i>
+        {{ 'NAV.Wishlist' | translate }}
+        @if ((wishlistCount$ | async); as wishlistCount) {
+          <span class="nav-count">{{ wishlistCount }}</span>
+        }
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-icon-link" routerLink="/Cart" routerLinkActive="active-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <i class="bi bi-bag"></i>
+        {{ 'NAV.Cart' | translate }}
+      </a>
+    </li>
+    <li class="nav-item"><a class="nav-link" *ngIf="auth.isAdmin()" routerLink="/AddProduct" routerLinkActive="active-link" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">{{ 'NAV.AddProduct' | translate }}</a></li>
+    <li class="nav-item"><button class="nav-link logout-link" (click)="logout()">{{ 'NAV.Logout' | translate }}</button></li>
+    </ul>
+    
+
+   }@else{
+ <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/Login" routerLinkActive="active-link"
+         data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        {{ 'NAV.Login' | translate }}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/Register" routerLinkActive="active-link"
+         data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        {{ 'NAV.Register' | translate }}
+      </a>
+    </li>
+  </ul>
+
+   }
+
+   }
+   
+  
+<ul class="navbar-nav mb-2 mb-lg-0">
+  <li class="nav-item">
+    <button class="btn btn-outline-primary rounded-pill px-3"
+            type="button" 
+            id="langToggle"
+            (click)="toggleLang()"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            [attr.aria-label]="(lang$ | async) === 'en' ? 'العربية' : 'English'">
+      {{ (lang$ | async) === 'en' ? 'EN' : 'AR' }}
+    </button>
+    <!--
+    <ul class="dropdown-menu dropdown-menu-end shadow">
+      <li>
+        <a class="dropdown-item" (click)="changeLang('en')"
+           data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          English
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" (click)="changeLang('ar')"
+           data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          العربية
+        </a>
+      </li>
+    </ul>
+    -->
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,121 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  min-height: 76px;
+  border-bottom: 1px solid rgba(23, 52, 44, .08);
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(23, 52, 44, .05);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  flex-grow: 0 !important;
+  color: #17342c;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  place-items: center;
+  color: #fff;
+  background: #17342c;
+  box-shadow: 0 8px 18px rgba(23, 52, 44, .2);
+}
+
+.brand-mark i {
+  font-size: 1.15rem;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: .2rem;
+}
+
+.nav-link {
+  position: relative;
+  margin-inline: .1rem;
+  padding: .65rem .8rem !important;
+  border-radius: 10px;
+  color: #51655e;
+  font-size: .92rem;
+  font-weight: 700;
+  transition: color .2s ease, background .2s ease;
+}
+
+.nav-link:hover {
+  color: #17342c;
+  background: #eef3f0;
+}
+
+.active-link {
+  color: #17342c !important;
+  background: #e6efeb;
+}
+
+.nav-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.nav-count {
+  display: grid;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 .3rem;
+  border-radius: 999px;
+  place-items: center;
+  color: #fff;
+  background: #b85b45;
+  font-size: .7rem;
+}
+
+.logout-link {
+  border: 0;
+  background: transparent;
+}
+
+#langToggle {
+  margin-inline-start: .65rem;
+  background-color: #17342c !important;
+  color: white !important;
+  border-color: #17342c !important;
+}
+#langToggle:hover {
+  background-color: #285c4e !important;
+  border-color: #285c4e !important;
+}
+.dropdown-menu {
+  border: 0;
+  border-radius: 14px;
+  background-color: #17342c !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.dropdown-menu .dropdown-item.active {
+  background-color: #285c4e !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    align-items: stretch;
+    padding: 1rem 0;
+  }
+
+  #langToggle {
+    margin: .5rem 0 1rem;
+  }
+}

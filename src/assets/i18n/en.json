@@ -1,0 +1,183 @@
+{
+
+  "NAV": {
+    "Home": "Home",
+    "About": "About",
+    "Cart": "Cart",
+    "AddProduct": "Add Product",
+    "Login": "Login",
+    "Register": "Register",
+    "Logout": "Logout",
+    "Store": "Store",
+    "Wishlist": "Wishlist"
+  },
+
+   "HOME": {
+    "TITLE": "Elevate Your Style",
+    "DESCRIPTION": "Discover the latest trends and timeless classics in fashion. Shop now and redefine your wardrobe with our curated collection.",
+    "SEARCH_PLACEHOLDER": "Search By Product Name.",
+    "ALL_CATEGORIES": "All Categories",
+    "ADD_TO_CART": "Add to Cart",
+    "EDIT_PRODUCT": "Edit Product",
+    "DATA_LOADING": "Loading products...",
+    "KICKER": "New season collection",
+    "SHOP_COLLECTION": "Shop the collection",
+    "FREE_SHIPPING": "Free shipping over $75",
+    "SECURE_PAYMENT": "Secure checkout",
+    "EASY_RETURNS": "Easy 30-day returns",
+    "CURATED_FOR_YOU": "Curated for you",
+    "EXPLORE_PRODUCTS": "Explore our products",
+    "PRODUCTS": "products",
+    "SORT_BY": "Sort products",
+    "SORT_FEATURED": "Featured",
+    "SORT_PRICE_LOW": "Price: low to high",
+    "SORT_PRICE_HIGH": "Price: high to low",
+    "SORT_RATING": "Top rated",
+    "LOW_STOCK": "Low stock",
+    "IN_STOCK": "In stock",
+    "LOAD_ERROR": "We could not load the products",
+    "TRY_AGAIN": "Try again",
+    "NO_RESULTS": "No products found",
+    "NO_RESULTS_HINT": "Try another search or category.",
+    "LOADING_MORE": "Loading more products"
+  }
+  ,
+  "ABOUT": {
+    "TITLE": "Our Story",
+    "PARAGRAPH": "At StyleHub, we believe that fashion is more than just clothing; it's a form of self-expression. Our journey began with a simple idea: to curate a collection of high-quality, stylish pieces that empower individuals to embrace their unique style.",
+    "MISSION_TITLE": "Our Mission",
+    "MISSION_BODY": "Our mission is to provide a seamless and enjoyable shopping experience, offering a diverse range of products that cater to every taste and occasion. We're committed to sustainability and ethical practices, working with suppliers who share our values. We strive to create a positive impact on the fashion industry and the world around us.",
+    "VALUES_TITLE": "Our Values",
+    "VALUE_QUALITY_TITLE": "Quality",
+    "VALUE_QUALITY_BODY": "We are dedicated to providing exceptional quality in every product we offer.",
+    "VALUE_SUSTAINABILITY_TITLE": "Sustainability",
+    "VALUE_SUSTAINABILITY_BODY": "We prioritize sustainable practices and ethical sourcing to minimize our environmental impact.",
+    "VALUE_COMMUNITY_TITLE": "Community",
+    "VALUE_COMMUNITY_BODY": "We foster a strong community of fashion enthusiasts, celebrating individuality and self-expression.",
+    "MEET_TEAM_TITLE": "Meet the Team",
+    "MEET_TEAM_DESC": "The passionate people behind StyleHub.",
+    "CONTACT_TITLE": "Get in Touch",
+    "CONTACT_PART1": "Have questions or feedback? We'd love to hear from you! Reach out to our customer support team at",
+    "CONTACT_PART2": "or call us at",
+    "SUBSCRIBE_PLACEHOLDER": "Your Email Address",
+    "SUBSCRIBE_BUTTON": "Subscribe to Our Newsletter"
+  }
+  ,
+  "ADD_PRODUCT": {
+    "TITLE": "Add New Product",
+    "PRODUCT_TITLE_LABEL": "Product Title",
+    "PRODUCT_TITLE_PLACEHOLDER": "Enter product title",
+    "PRODUCT_PRICE_LABEL": "Product Price ($)",
+    "PRODUCT_PRICE_PLACEHOLDER": "Enter product price",
+    "CATEGORY_LABEL": "Category",
+    "SELECT_CATEGORY": "Select Category",
+    "PRODUCT_IMAGE_LABEL": "Product Image URL",
+    "PRODUCT_IMAGE_PLACEHOLDER": "Enter image URL",
+    "PRODUCT_DESC_LABEL": "Product Description",
+    "PRODUCT_DESC_PLACEHOLDER": "Enter product description",
+    "SUBMIT_ADD": "Add Product",
+    "SUBMIT_EDIT": "Edit Product"
+  }
+  ,
+  "CART": {
+    "TITLE": "Your Shopping Cart",
+    "HEADER_PRODUCT": "Product",
+    "HEADER_PRICE": "Price",
+    "HEADER_QUANTITY": "Quantity",
+    "HEADER_SUBTOTAL": "Subtotal",
+    "ORDER_SUMMARY": "Order Summary",
+    "SUBTOTAL": "Subtotal",
+    "TOTAL": "Total",
+    "PRICE_LABEL": "Price:",
+    "SUBTOTAL_LABEL": "Subtotal:",
+    "PROCEED_TO_CHECKOUT": "Proceed to Checkout"
+    ,
+    "MSG_ALREADY_EXISTS": "Product already exists in the cart!",
+    "MSG_ADDED_SUCCESS": "Product added to cart successfully!"
+  }
+  ,
+  "FOOTER": {
+    "SHOP_NAME": "ShopSmart",
+    "SHOP_DESC": "Your one-stop shop for everything you need.",
+    "QUICK_LINKS_TITLE": "Quick Links",
+    "QUICK_LINKS": {
+      "ABOUT_US": "About Us",
+      "CONTACT_US": "Contact Us",
+      "FAQS": "FAQs",
+      "BLOG": "Blog"
+    },
+    "CUSTOMER_SERVICE_TITLE": "Customer Service",
+    "CUSTOMER_SERVICE": {
+      "MY_ACCOUNT": "My Account",
+      "TRACK_ORDER": "Track Order",
+      "SHIPPING_RETURNS": "Shipping & Returns",
+      "TERMS": "Terms of Service",
+      "PRIVACY": "Privacy Policy"
+    },
+    "NEWSLETTER_TITLE": "Newsletter",
+    "NEWSLETTER_DESC": "Subscribe to our newsletter for updates and special offers.",
+    "NEWSLETTER_PLACEHOLDER": "Your email",
+    "NEWSLETTER_BUTTON": "Subscribe"
+  }
+  ,
+  "LOGIN": {
+    "TITLE": "Log in to your account",
+    "SUBTITLE": "Welcome back! Please enter your details.",
+    "EMAIL_PLACEHOLDER": "Email address",
+    "PASSWORD_PLACEHOLDER": "Password",
+    "ERROR_EMAIL_REQUIRED": "Email is required.",
+    "ERROR_EMAIL_INVALID": "Enter a valid email.",
+    "ERROR_PASSWORD_REQUIRED": "Password is required.",
+    "ERROR_PASSWORD_MIN": "Password must be at least 6 characters.",
+    "BUTTON_LOGIN": "Log In",
+    "BUTTON_GOOGLE": "Login with Google",
+    "SIGNUP_PROMPT": "Don't have an account?",
+    "SIGNUP_LINK": "Sign up"
+  }
+  ,
+  "PAYED": {
+    "TITLE": "✅ Payment Successful!",
+    "PAID_PREFIX": "Your payment of",
+    "PAID_SUFFIX": "was completed successfully.",
+    "THANK_YOU": "Thank you for your purchase!",
+    "REDIRECTING": "You’ll be redirected shortly..."
+  }
+  ,
+  "PRODUCT_DETAILS": {
+    "CUSTOMER_REVIEWS": "Customer Reviews",
+    "RELATED_PRODUCTS": "Related Products",
+    "BRAND": "Brand",
+    "ADD_TO_CART": "Add to Cart"
+  },
+  "WISHLIST": {
+    "EYEBROW": "Your personal edit",
+    "TITLE": "Saved favorites",
+    "DESCRIPTION": "Keep the products you love in one place and come back whenever you are ready.",
+    "SAVED_ITEMS": "saved items",
+    "ADD_TO_CART": "Add to cart",
+    "REMOVE": "Remove from wishlist",
+    "TOGGLE": "Toggle wishlist",
+    "EMPTY_TITLE": "Your wishlist is waiting",
+    "EMPTY_DESCRIPTION": "Tap the heart on any product to save it here for later.",
+    "START_SHOPPING": "Start shopping",
+    "MSG_ADDED": "Product saved to your wishlist.",
+    "MSG_REMOVED": "Product removed from your wishlist."
+  }
+  ,
+  "REGISTER": {
+    "TITLE": "Create your account",
+    "SUBTITLE": "Start your shopping journey with us.",
+    "FULLNAME_PLACEHOLDER": "Full Name",
+    "FULLNAME_REQUIRED": "Full name is required (min 3 chars).",
+    "EMAIL_PLACEHOLDER": "Email address",
+    "EMAIL_INVALID": "Valid email is required.",
+    "PASSWORD_PLACEHOLDER": "Password",
+    "PASSWORD_MIN": "Password must be at least 6 characters.",
+    "CONFIRM_PASSWORD_PLACEHOLDER": "Confirm Password",
+    "PASSWORD_MISMATCH": "Passwords do not match.",
+    "TERMS_TEXT": "I agree to the <span class=\"fw-semibold text-primary\">Terms of Service</span>",
+    "TERMS_REQUIRED": "You must agree before registering.",
+    "BUTTON_SIGNUP": "Sign Up",
+    "BUTTON_GOOGLE": "Register with Google"
+  }
+}

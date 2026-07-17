@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f8faf8;
+}
+
+.app-content {
+  padding: 1rem clamp(1rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 576px) {
+  .app-content {
+    padding: .75rem;
+  }
+}

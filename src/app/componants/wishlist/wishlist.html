@@ -1,0 +1,62 @@
+<main class="wishlist-page">
+  <div class="wishlist-header">
+    <div>
+      <span>{{ 'WISHLIST.EYEBROW' | translate }}</span>
+      <h1>{{ 'WISHLIST.TITLE' | translate }}</h1>
+      <p>{{ 'WISHLIST.DESCRIPTION' | translate }}</p>
+    </div>
+    @if (products.length > 0) {
+      <div class="saved-count">
+        <strong>{{ products.length }}</strong>
+        {{ 'WISHLIST.SAVED_ITEMS' | translate }}
+      </div>
+    }
+  </div>
+
+  @if (products.length > 0) {
+    <div class="wishlist-grid">
+      @for (product of products; track product.id) {
+        <article
+          class="wishlist-card"
+          tabindex="0"
+          (click)="goToDetails(product.id)"
+          (keydown.enter)="goToDetails(product.id)"
+        >
+          <div class="image-wrap">
+            <img [src]="product.thumbnail" [alt]="product.title">
+            <button
+              type="button"
+              class="remove-button"
+              [attr.aria-label]="'WISHLIST.REMOVE' | translate"
+              (click)="remove(product.id, $event)"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="category">{{ product.category }}</span>
+            <h2>{{ product.title }}</h2>
+            <div class="meta-row">
+              <strong>${{ product.price | number:'1.2-2' }}</strong>
+              <span><i class="bi bi-star-fill"></i> {{ product.rating }}</span>
+            </div>
+            <button type="button" class="add-button" (click)="addToCart(product, $event)">
+              <i class="bi bi-bag-plus"></i>
+              {{ 'WISHLIST.ADD_TO_CART' | translate }}
+            </button>
+          </div>
+        </article>
+      }
+    </div>
+  } @else {
+    <section class="empty-wishlist">
+      <div class="empty-icon"><i class="bi bi-heart"></i></div>
+      <h2>{{ 'WISHLIST.EMPTY_TITLE' | translate }}</h2>
+      <p>{{ 'WISHLIST.EMPTY_DESCRIPTION' | translate }}</p>
+      <a routerLink="/Home">
+        {{ 'WISHLIST.START_SHOPPING' | translate }}
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </section>
+  }
+</main>

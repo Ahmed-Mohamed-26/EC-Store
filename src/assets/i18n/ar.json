@@ -1,0 +1,184 @@
+{
+ 
+  "NAV": {
+    "Home": "الرئيسية",
+    "About": "من نحن",
+    "Cart": "سله المنتجات",
+    "AddProduct": "إضافة منتج",
+    "Login": "تسجيل الدخول",
+    "Register": "التسجيل",
+    "Logout": "تسجيل الخروج",
+    "Store": "المتجر",
+    "Wishlist": "المفضلة"
+  },
+ 
+  "HOME": {
+    "TITLE": "ارتقِ بإطلالتك",
+    "DESCRIPTION": "اكتشف أحدث الصيحات والكلاسيكيات الخالدة في عالم الموضة. تسوق الآن وجدّد خزانة ملابسك مع مجموعتنا المختارة بعناية.",
+    "SEARCH_PLACEHOLDER": "ابحث باسم المنتج.",
+    "ALL_CATEGORIES": "جميع الفئات",
+    "ADD_TO_CART": "أضف إلى السلة",
+  "EDIT_PRODUCT": "تعديل المنتج",
+  "DATA_LOADING": "جارٍ تحميل المنتجات...",
+  "KICKER": "مجموعة الموسم الجديد",
+  "SHOP_COLLECTION": "تسوق المجموعة",
+  "FREE_SHIPPING": "شحن مجاني للطلبات فوق 75$",
+  "SECURE_PAYMENT": "دفع آمن",
+  "EASY_RETURNS": "إرجاع سهل خلال 30 يومًا",
+  "CURATED_FOR_YOU": "مختارة لك",
+  "EXPLORE_PRODUCTS": "استكشف منتجاتنا",
+  "PRODUCTS": "منتج",
+  "SORT_BY": "ترتيب المنتجات",
+  "SORT_FEATURED": "المميزة",
+  "SORT_PRICE_LOW": "السعر: من الأقل للأعلى",
+  "SORT_PRICE_HIGH": "السعر: من الأعلى للأقل",
+  "SORT_RATING": "الأعلى تقييمًا",
+  "LOW_STOCK": "الكمية محدودة",
+  "IN_STOCK": "متوفر",
+  "LOAD_ERROR": "تعذر تحميل المنتجات",
+  "TRY_AGAIN": "حاول مرة أخرى",
+  "NO_RESULTS": "لا توجد منتجات",
+  "NO_RESULTS_HINT": "جرب بحثًا أو فئة أخرى.",
+  "LOADING_MORE": "جارٍ تحميل المزيد"
+  }
+  ,
+  "ABOUT": {
+    "TITLE": "قصتنا",
+    "PARAGRAPH": "في ستايلهَب، نؤمن أن الموضة أكثر من مجرد ملابس؛ إنها وسيلة للتعبير عن الذات. بدأت رحلتنا بفكرة بسيطة: جمع تشكيلة من القطع عالية الجودة والأنيقة التي تمنح الأفراد الثقة لتبني أسلوبهم الفريد.",
+    "MISSION_TITLE": "مهمتنا",
+    "MISSION_BODY": "مهمتنا هي توفير تجربة تسوق سلسة وممتعة، مع تقديم مجموعة متنوعة من المنتجات التي تناسب جميع الأذواق والمناسبات. نحن ملتزمون بالاستدامة والممارسات الأخلاقية، ونعمل مع موردين يشاركوننا القيم. نسعى لإحداث تأثير إيجابي في صناعة الموضة والعالم من حولنا.",
+    "VALUES_TITLE": "قيمنا",
+    "VALUE_QUALITY_TITLE": "الجودة",
+    "VALUE_QUALITY_BODY": "نلتزم بتقديم جودة استثنائية في كل منتج نوفره.",
+    "VALUE_SUSTAINABILITY_TITLE": "الاستدامة",
+    "VALUE_SUSTAINABILITY_BODY": "نولي الأولوية للممارسات المستدامة والمصادر الأخلاقية لتقليل تأثيرنا البيئي.",
+    "VALUE_COMMUNITY_TITLE": "المجتمع",
+    "VALUE_COMMUNITY_BODY": "نُعزز مجتمعًا قويًا من عشاق الموضة، نحتفل فيه بالفردية والتعبير عن الذات.",
+    "MEET_TEAM_TITLE": "تعرف على الفريق",
+    "MEET_TEAM_DESC": "الأشخاص المتحمسون وراء ستايلهَب.",
+    "CONTACT_TITLE": "تواصل معنا",
+    "CONTACT_PART1": "هل لديك أسئلة أو ملاحظات؟ نود سماعك! تواصل مع فريق دعم العملاء لدينا على",
+    "CONTACT_PART2": "أو اتصل بنا على",
+    "SUBSCRIBE_PLACEHOLDER": "عنوان بريدك الإلكتروني",
+    "SUBSCRIBE_BUTTON": "اشترك في نشرتنا الإخبارية"
+  }
+  ,
+  "ADD_PRODUCT": {
+    "TITLE": "إضافة منتج جديد",
+    "PRODUCT_TITLE_LABEL": "عنوان المنتج",
+    "PRODUCT_TITLE_PLACEHOLDER": "أدخل عنوان المنتج",
+    "PRODUCT_PRICE_LABEL": "سعر المنتج ($)",
+    "PRODUCT_PRICE_PLACEHOLDER": "أدخل سعر المنتج",
+    "CATEGORY_LABEL": "الفئة",
+    "SELECT_CATEGORY": "اختر الفئة",
+    "PRODUCT_IMAGE_LABEL": "رابط صورة المنتج",
+    "PRODUCT_IMAGE_PLACEHOLDER": "أدخل رابط الصورة",
+    "PRODUCT_DESC_LABEL": "وصف المنتج",
+    "PRODUCT_DESC_PLACEHOLDER": "أدخل وصف المنتج",
+    "SUBMIT_ADD": "إضافة منتج",
+    "SUBMIT_EDIT": "تعديل المنتج"
+  }
+  ,
+  "CART": {
+    "TITLE": "سلة التسوق الخاصة بك",
+    "HEADER_PRODUCT": "المنتج",
+    "HEADER_PRICE": "السعر",
+    "HEADER_QUANTITY": "الكمية",
+    "HEADER_SUBTOTAL": "الإجمالي الفرعي",
+    "ORDER_SUMMARY": "ملخص الطلب",
+    "SUBTOTAL": "المجموع الفرعي",
+    "TOTAL": "الإجمالي",
+    "PRICE_LABEL": "السعر:",
+    "SUBTOTAL_LABEL": "الإجمالي الفرعي:",
+    "PROCEED_TO_CHECKOUT": "المتابعة إلى الدفع"
+    ,
+    "MSG_ALREADY_EXISTS": "المنتج موجود بالفعل في السلة!",
+    "MSG_ADDED_SUCCESS": "تمت إضافة المنتج إلى السلة بنجاح!"
+  }
+  ,
+  "FOOTER": {
+    "SHOP_NAME": "متجر ذكي",
+    "SHOP_DESC": "متجرك المتكامل لكل ما تحتاجه.",
+    "QUICK_LINKS_TITLE": "روابط سريعة",
+    "QUICK_LINKS": {
+      "ABOUT_US": "من نحن",
+      "CONTACT_US": "تواصل معنا",
+      "FAQS": "الأسئلة الشائعة",
+      "BLOG": "المدونة"
+    },
+    "CUSTOMER_SERVICE_TITLE": "خدمة العملاء",
+    "CUSTOMER_SERVICE": {
+      "MY_ACCOUNT": "حسابي",
+      "TRACK_ORDER": "تتبع الطلب",
+      "SHIPPING_RETURNS": "الشحن والإرجاع",
+      "TERMS": "شروط الخدمة",
+      "PRIVACY": "سياسة الخصوصية"
+    },
+    "NEWSLETTER_TITLE": "النشرة الإخبارية",
+    "NEWSLETTER_DESC": "اشترك في نشرتنا الإخبارية للحصول على التحديثات والعروض الخاصة.",
+    "NEWSLETTER_PLACEHOLDER": "بريدك الإلكتروني",
+    "NEWSLETTER_BUTTON": "اشترك"
+  }
+  ,
+  "LOGIN": {
+    "TITLE": "تسجيل الدخول إلى حسابك",
+    "SUBTITLE": "مرحبًا بعودتك! الرجاء إدخال بياناتك.",
+    "EMAIL_PLACEHOLDER": "البريد الإلكتروني",
+    "PASSWORD_PLACEHOLDER": "كلمة المرور",
+    "ERROR_EMAIL_REQUIRED": "البريد الإلكتروني مطلوب.",
+    "ERROR_EMAIL_INVALID": "أدخل بريدًا إلكترونيًا صالحًا.",
+    "ERROR_PASSWORD_REQUIRED": "كلمة المرور مطلوبة.",
+    "ERROR_PASSWORD_MIN": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",
+    "BUTTON_LOGIN": "تسجيل الدخول",
+    "BUTTON_GOOGLE": "تسجيل الدخول عبر جوجل",
+    "SIGNUP_PROMPT": "ليس لديك حساب؟",
+    "SIGNUP_LINK": "إنشاء حساب"
+  }
+  ,
+  "PAYED": {
+    "TITLE": "✅ تم الدفع بنجاح!",
+    "PAID_PREFIX": "تمت عملية الدفع بمبلغ",
+    "PAID_SUFFIX": "بنجاح.",
+    "THANK_YOU": "شكرًا لشرائك!",
+    "REDIRECTING": "سيتم توجيهك قريبًا..."
+  }
+  ,
+  "PRODUCT_DETAILS": {
+    "CUSTOMER_REVIEWS": "مراجعات العملاء",
+    "RELATED_PRODUCTS": "منتجات ذات صلة",
+    "BRAND": "الماركة",
+    "ADD_TO_CART": "أضف إلى السلة"
+  },
+  "WISHLIST": {
+    "EYEBROW": "اختياراتك الخاصة",
+    "TITLE": "المنتجات المفضلة",
+    "DESCRIPTION": "احتفظ بالمنتجات التي تحبها في مكان واحد وعد إليها عندما تكون مستعدًا.",
+    "SAVED_ITEMS": "منتجات محفوظة",
+    "ADD_TO_CART": "أضف إلى السلة",
+    "REMOVE": "إزالة من المفضلة",
+    "TOGGLE": "تغيير حالة المفضلة",
+    "EMPTY_TITLE": "قائمة المفضلة فارغة",
+    "EMPTY_DESCRIPTION": "اضغط على القلب بجوار أي منتج لحفظه هنا.",
+    "START_SHOPPING": "ابدأ التسوق",
+    "MSG_ADDED": "تم حفظ المنتج في المفضلة.",
+    "MSG_REMOVED": "تمت إزالة المنتج من المفضلة."
+  }
+  ,
+  "REGISTER": {
+    "TITLE": "انشئ حسابك",
+    "SUBTITLE": "ابدأ رحلة التسوق معنا.",
+    "FULLNAME_PLACEHOLDER": "الاسم الكامل",
+    "FULLNAME_REQUIRED": "الاسم الكامل مطلوب (3 أحرف على الأقل).",
+    "EMAIL_PLACEHOLDER": "البريد الإلكتروني",
+    "EMAIL_INVALID": "البريد الإلكتروني غير صالح.",
+    "PASSWORD_PLACEHOLDER": "كلمة المرور",
+    "PASSWORD_MIN": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",
+    "CONFIRM_PASSWORD_PLACEHOLDER": "تأكيد كلمة المرور",
+    "PASSWORD_MISMATCH": "كلمات المرور غير متطابقة.",
+    "TERMS_TEXT": "أوافق على <span class=\"fw-semibold text-primary\">شروط الخدمة</span>",
+    "TERMS_REQUIRED": "يجب الموافقة قبل التسجيل.",
+    "BUTTON_SIGNUP": "إنشاء حساب",
+    "BUTTON_GOOGLE": "التسجيل عبر جوجل"
+  }
+}
+

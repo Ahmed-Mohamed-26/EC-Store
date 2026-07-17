@@ -1,0 +1,147 @@
+
+<main class="store-home">
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="hero-kicker">{{ 'HOME.KICKER' | translate }}</span>
+      <h1>{{ 'HOME.TITLE' | translate }}</h1>
+      <p>{{ 'HOME.DESCRIPTION' | translate }}</p>
+      <a class="hero-action" href="#collection">
+        {{ 'HOME.SHOP_COLLECTION' | translate }}
+        <i class="bi bi-arrow-down"></i>
+      </a>
+    </div>
+    <div class="hero-trust">
+      <span><i class="bi bi-truck"></i>{{ 'HOME.FREE_SHIPPING' | translate }}</span>
+      <span><i class="bi bi-shield-check"></i>{{ 'HOME.SECURE_PAYMENT' | translate }}</span>
+      <span><i class="bi bi-arrow-repeat"></i>{{ 'HOME.EASY_RETURNS' | translate }}</span>
+    </div>
+  </section>
+
+  <section class="collection-section" id="collection">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">{{ 'HOME.CURATED_FOR_YOU' | translate }}</span>
+        <h2>{{ 'HOME.EXPLORE_PRODUCTS' | translate }}</h2>
+      </div>
+      <span class="product-count">{{ products.length }} {{ 'HOME.PRODUCTS' | translate }}</span>
+    </div>
+
+    <div class="filter-panel">
+      <label class="search-box">
+        <i class="bi bi-search"></i>
+        <input
+          type="search"
+          [attr.aria-label]="'HOME.SEARCH_PLACEHOLDER' | translate"
+          placeholder="{{ 'HOME.SEARCH_PLACEHOLDER' | translate }}"
+          [(ngModel)]="searchQuery"
+          (input)="search()"
+        >
+      </label>
+
+      <select
+        class="form-select"
+        [(ngModel)]="selectedCategory"
+        (change)="filterByCategory()"
+        [attr.aria-label]="'HOME.ALL_CATEGORIES' | translate"
+      >
+        <option value="">{{ 'HOME.ALL_CATEGORIES' | translate }}</option>
+        @for (cat of categories; track cat.slug) {
+          <option [value]="cat.slug">{{ cat.name }}</option>
+        }
+      </select>
+
+      <select
+        class="form-select"
+        [(ngModel)]="sortBy"
+        [attr.aria-label]="'HOME.SORT_BY' | translate"
+      >
+        <option value="featured">{{ 'HOME.SORT_FEATURED' | translate }}</option>
+        <option value="price-low">{{ 'HOME.SORT_PRICE_LOW' | translate }}</option>
+        <option value="price-high">{{ 'HOME.SORT_PRICE_HIGH' | translate }}</option>
+        <option value="rating">{{ 'HOME.SORT_RATING' | translate }}</option>
+      </select>
+    </div>
+
+    @if (displayedProducts.length > 0) {
+      <div class="product-grid">
+        @for (product of displayedProducts; track product.id) {
+          <article
+            class="product-card"
+            (click)="goToDetails(product.id)"
+            (keydown.enter)="goToDetails(product.id)"
+            tabindex="0"
+          >
+            <div class="product-media">
+              <img loading="lazy" [src]="product.thumbnail" [alt]="product.title">
+              @if (product.discountPercentage > 0) {
+                <span class="discount-badge">-{{ product.discountPercentage | number:'1.0-0' }}%</span>
+              }
+              @if (!isAdmin) {
+                <button
+                  class="wishlist-button"
+                  type="button"
+                  [class.active]="isWishlisted(product.id)"
+                  [attr.aria-label]="'WISHLIST.TOGGLE' | translate"
+                  (click)="toggleWishlist(product, $event)"
+                >
+                  <i class="bi" [ngClass]="isWishlisted(product.id) ? 'bi-heart-fill' : 'bi-heart'"></i>
+                </button>
+              }
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">{{ product.category }}</span>
+              <h3>{{ product.title }}</h3>
+              <div class="rating-row">
+                <span><i class="bi bi-star-fill"></i> {{ product.rating }}</span>
+                <span class="stock" [class.low-stock]="product.stock < 10">
+                  {{ product.stock < 10 ? ('HOME.LOW_STOCK' | translate) : ('HOME.IN_STOCK' | translate) }}
+                </span>
+              </div>
+              <div class="price-row">
+                <strong>${{ product.price | number:'1.2-2' }}</strong>
+                @if (product.discountPercentage > 0) {
+                  <del>${{ getOriginalPrice(product) | number:'1.2-2' }}</del>
+                }
+              </div>
+
+              <button class="cart-button" *ngIf="!isAdmin" (click)="addToCart(product, $event)">
+                <i class="bi bi-bag-plus"></i>
+                {{ 'HOME.ADD_TO_CART' | translate }}
+              </button>
+              <button class="cart-button" *ngIf="isAdmin" (click)="editProduct(product, $event)">
+                <i class="bi bi-pencil"></i>
+                {{ 'HOME.EDIT_PRODUCT' | translate }}
+              </button>
+            </div>
+          </article>
+        }
+      </div>
+    } @else if (loading) {
+      <div class="state-panel">
+        <div class="spinner-border" role="status"></div>
+        <p>{{ 'HOME.DATA_LOADING' | translate }}</p>
+      </div>
+    } @else if (loadError) {
+      <div class="state-panel error">
+        <i class="bi bi-wifi-off"></i>
+        <h3>{{ 'HOME.LOAD_ERROR' | translate }}</h3>
+        <button class="btn btn-primary" (click)="loadProducts()">{{ 'HOME.TRY_AGAIN' | translate }}</button>
+      </div>
+    } @else {
+      <div class="state-panel">
+        <i class="bi bi-search"></i>
+        <h3>{{ 'HOME.NO_RESULTS' | translate }}</h3>
+        <p>{{ 'HOME.NO_RESULTS_HINT' | translate }}</p>
+      </div>
+    }
+
+    @if (loading && products.length > 0) {
+      <div class="loading-more">
+        <span class="spinner-border spinner-border-sm"></span>
+        {{ 'HOME.LOADING_MORE' | translate }}
+      </div>
+    }
+  </section>
+</main>
+
