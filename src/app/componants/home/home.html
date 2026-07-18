@@ -81,7 +81,9 @@
                   class="wishlist-button"
                   type="button"
                   [class.active]="isWishlisted(product.id)"
+                  [attr.aria-pressed]="isWishlisted(product.id)"
                   [attr.aria-label]="'WISHLIST.TOGGLE' | translate"
+                  [attr.title]="'WISHLIST.TOGGLE' | translate"
                   (click)="toggleWishlist(product, $event)"
                 >
                   <i class="bi" [ngClass]="isWishlisted(product.id) ? 'bi-heart-fill' : 'bi-heart'"></i>

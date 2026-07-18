@@ -1,0 +1,28 @@
+:host {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.app-toast-container {
+  position: fixed !important;
+  top: 90px !important;
+  right: 16px !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: 99999 !important;
+  pointer-events: none;
+}
+
+.app-toast-container .toast {
+  pointer-events: auto;
+}
+
+@media (max-width: 576px) {
+  .app-toast-container {
+    top: 84px !important;
+    right: 12px !important;
+    left: 12px !important;
+  }
+}
