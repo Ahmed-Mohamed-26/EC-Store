@@ -54,4 +54,8 @@ registerForm: FormGroup;
       }
     }
   }
+
+  goToLogin() {
+    this.router.navigate(['/Login']);
+  }
 }

@@ -38,6 +38,11 @@
   gap: .2rem;
 }
 
+/* Keep the language switcher on the opposite side of the navbar. */
+.navbar-collapse > .navbar-nav:last-child {
+  margin-inline-start: auto !important;
+}
+
 .nav-link {
   position: relative;
   margin-inline: .1rem;
